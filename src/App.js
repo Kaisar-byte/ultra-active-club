@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home/Home';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
     <div className="App">
-      <h2>Testing my assignment for starting</h2>
+      <Home></Home>
     </div>
   );
 }
