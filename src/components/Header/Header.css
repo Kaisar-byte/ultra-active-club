@@ -1,6 +1,8 @@
 .header-container {
     margin: 10px;
-    border: 2px solid red
+    box-shadow: 2px 0px 10px 0px red;
+    padding: 0 10px;
+    border-radius: 50px;
 }
 
 .header-container h3 {
@@ -17,6 +19,7 @@
 }
 
 .header-text {
-    font-size: 25px;
-    color: cadetblue;
+    font-size: 20px;
+    color: coral;
+    font-family: Arial, Helvetica, sans-serif
 }

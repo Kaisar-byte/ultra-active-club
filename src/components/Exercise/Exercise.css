@@ -1,0 +1,35 @@
+.exercise-card {
+    border-radius: 3px;
+    width: 205px;
+    height: 310px;
+    position: relative;
+    border: 1px solid saddlebrown;
+}
+
+.exercise-card img {
+    border-radius: 3px;
+    width: 200px;
+    height: 120px;
+    margin: 2px 2px;
+}
+
+.exercise-card-info {
+    font-size: 12px;
+    text-align: left;
+    padding: 2px 4px;
+}
+
+.exercise-card-info p {
+    margin: 5px 0;
+}
+
+.btn-addToList {
+    position: absolute;
+    width: 100%;
+    background-color: orange;
+    padding: 2px;
+    border: none;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}

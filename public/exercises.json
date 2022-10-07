@@ -1,0 +1,76 @@
+{
+    "exercise": [
+        {
+            "exerciseId": "01",
+            "exerciseName": "Bench Press",
+            "exerciseDescription": "The barbell bench press is a fantastic exercise for upper body muscle growth and works your chest, front deltoids, and your triceps effectively and allows you to use heavy weights for maximum intensity. Starting your training sessions with compound exercises when your energy levels are high is a good idea, and the bench press is a great go-to option for the chest.",
+            "exerciseThumbnail": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2021/09/bench-press.gif",
+            "exerciseDuration": 20,
+            "exerciseMinAge": "25 yrs"
+        },
+        {
+            "exerciseId": "02",
+            "exerciseName": "Dumbbell Incline Press",
+            "exerciseDescription": "Research shows that performing the exercise on an incline rather than a flat bench leads to greater upper chest muscle thickness.1 Also, by using a pair of dumbbells, you get a full range of motion, which could be beneficial for building muscle mass. ",
+            "exerciseThumbnail": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Incline-Press.gif",
+            "exerciseDuration": 15,
+            "exerciseMinAge": "24 yrs"
+        },
+        {
+            "exerciseId": "03",
+            "exerciseName": "Lat Pulldown",
+            "exerciseDescription": "Use a medium-wide overhand grip, as it offers some advantages over narrow and wide grips.3 Also, make sure to observe proper form. Don’t use an excessive amount of weight that forces you to involve your entire body. Focus on pulling the bar to your chest using your back muscles and avoid body momentum.",
+            "exerciseThumbnail": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/lat-pulldown-with-pronated-grip.gif",
+            "exerciseDuration": 18,
+            "exerciseMinAge": "28 yrs"
+        },
+        {
+            "exerciseId": "04",
+            "exerciseName": "Barbell Row",
+            "exerciseDescription": "By bending forwards more or less from the starting position, you can focus on different parts of your back. You can bend at the hips to just above a 90-degree angle where your upper body is almost parallel to the floor, or you can stand more upright and transfer more of the load to your traps and upper back.",
+            "exerciseThumbnail": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/03/Barbell-Row.gif",
+            "exerciseDuration": 14,
+            "exerciseMinAge": "27 yrs"
+        },
+        {
+            "exerciseId": "05",
+            "exerciseName": "Overhead Press",
+            "exerciseDescription": "Whether you prefer dumbbells or a barbell, the overhead press is one of the best exercises for building massive shoulders. Including both or switching between them regularly is probably a good idea to force all muscle fibers to grow.",
+            "exerciseThumbnail": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Overhead-press-exercise.gif",
+            "exerciseDuration": 26,
+            "exerciseMinAge": "29 yrs"
+        },
+        {
+            "exerciseId": "06",
+            "exerciseName": "Dumbbell Lateral Raise",
+            "exerciseDescription": "The most common way to do lateral raises is using a pair of dumbbells, but the cable lateral raise is a viable option. Using a cable allows you to keep the tension on the working muscle throughout the movement.",
+            "exerciseThumbnail": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Dumbbell-Lateral-Raise.gif?resize=600%2C600&ssl=1",
+            "exerciseDuration": 19,
+            "exerciseMinAge": "24 yrs"
+        },
+        {
+            "exerciseId": "07",
+            "exerciseName": "Reverse Dumbbell Flyes",
+            "exerciseDescription": "Many bodybuilders have underdeveloped rear deltoids, but bodybuilding is all about balance. Adding reverse dumbbell flyes to your shoulder exercise arsenal help you achieve that balance. They also add to the overall appearance of your upper back and give you that impressive 3D look.",
+            "exerciseThumbnail": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/02/Reverse-dumbbell-flyes.gif",
+            "exerciseDuration": 32,
+            "exerciseMinAge": "31 yrs"
+        },
+        {
+            "exerciseId": "08",
+            "exerciseName": "Barbell Lying Triceps Extensions",
+            "exerciseDescription": "Unlike the standard skull crushers where you bring the barbell down to your forehead, lowering the bar behind your head allows for a greater range of motion and a full triceps stretch, an important thing for complete muscle development.",
+            "exerciseThumbnail": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Barbell-Lying-Tricep-Extension.gif",
+            "exerciseDuration": 31,
+            "exerciseMinAge": "33 yrs"
+        },
+        {
+            "exerciseId": "09",
+            "exerciseName": "Overhead Cable Triceps Extensions",
+            "exerciseDescription": "Unlike the standard skull crushers where you bring the barbell down to your forehead, lowering the bar behind your head allows for a greater range of motion and a full triceps stretch, an important thing for complete muscle development.",
+            "exerciseThumbnail": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/04/cable-rope-overhead-triceps-extension.gif",
+            "exerciseDuration": 25,
+            "exerciseMinAge": "23 yrs"
+        }
+    ]
+}
