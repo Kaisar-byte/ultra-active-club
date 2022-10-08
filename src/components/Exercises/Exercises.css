@@ -1,6 +1,6 @@
 .exercises-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 6px 5px;
     padding: 12px;
 }
@@ -9,4 +9,11 @@
     text-align: center;
     margin: 0 0 0 20px;
     color: rgb(138, 11, 177);
+}
+
+@media screen and (max-width:480px) {
+    .exercises-container {
+
+        grid-template-columns: 1fr;
+    }
 }

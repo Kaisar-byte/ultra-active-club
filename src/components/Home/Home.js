@@ -25,9 +25,7 @@ const Home = () => {
     const handleBreakDown = (e) => {
         const prevValue = [e.target.innerText]
         setBtnValue(prevValue)
-
     }
-
 
     return (
         <div className='home-container'>
@@ -57,6 +55,7 @@ const Home = () => {
                                 <div className='exercise-time-text'>
                                     <p className='break-time'>Break Time</p>
                                     <span className='time-value'>{btnValue} minutes</span>
+                                    <button className='activity'>Activity Completed</button>
                                 </div>
                             </div>
                         </div>

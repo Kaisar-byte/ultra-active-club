@@ -11,6 +11,7 @@ body {
     padding: 20px;
 }
 
+
 .sticky-bar {
     position: sticky;
     top: 0;
@@ -29,12 +30,16 @@ body {
     gap: 5px;
 }
 
+.exercise-details h3 {
+    margin-bottom: -10px
+}
+
 .exercise-time-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: -15px
+
 }
 
 .exercise-time-text p {
@@ -48,6 +53,17 @@ body {
     border-radius: 3px;
     height: 30px;
     color: black
+}
+
+.activity {
+    width: 150px;
+    height: 20px;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    height: 30px;
+    color: rgb(236, 229, 229);
+    margin-top: 30px;
+    background-color: coral;
 }
 
 
@@ -84,4 +100,15 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+
+
+@media screen and (max-width:480px) {
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
