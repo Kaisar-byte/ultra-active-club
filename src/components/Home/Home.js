@@ -33,7 +33,7 @@ const Home = () => {
         <div className='home-container'>
             <div className="left-content">
                 <Header></Header>
-                <Exercises list={list} setList={setList} exercises={exercises} changeListText={changeListText} setChangeListText={setChangeListText}></Exercises>
+                <Exercises list={list} setList={setList} handleBreakDown={handleBreakDown} exercises={exercises} changeListText={changeListText} setChangeListText={setChangeListText}></Exercises>
 
             </div>
             <div className="right-sideBar">
@@ -63,7 +63,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

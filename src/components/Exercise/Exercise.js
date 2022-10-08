@@ -1,16 +1,17 @@
 import React from 'react';
 import './Exercise.css'
 
-const Exercise = ({ exercise, list, setList, changeListText, setChangeListText }) => {
+const Exercise = ({ exercise, list, setList, changeListText, setChangeListText, handleBreakDown }) => {
 
     const { exerciseDescription, exerciseDuration, exerciseName, exerciseThumbnail, exerciseMinAge, exerciseId } = exercise
 
     const addToList = id => {
         const time = {
-            exerciseDuration
+            exerciseDuration,
+            exerciseId
         }
 
-
+        console.log(time)
         if (list?.length) {
             // const newList = parseInt(setList([...list, time]));
             const newList = [...list, time]
@@ -20,12 +21,17 @@ const Exercise = ({ exercise, list, setList, changeListText, setChangeListText }
             // const prevList = parseInt(setList(time));
             const prevList = [time]
             setList(prevList)
-            console.log(list)
         }
 
         const preStorage = localStorage.getItem('list')
-        if (preStorage) {
-            
+        const oldStorage = JSON.parse(preStorage)
+        if (oldStorage) {
+            console.log('acchee')
+            // const isExist = oldStorage.find(p => p.exerciseId === id);
+            // console.log(isExist)
+        } else {
+            console.log('naiiiii');
+            localStorage.setItem('list', JSON.stringify([...oldStorage, time]))
         }
 
     }
