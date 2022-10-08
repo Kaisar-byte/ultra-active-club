@@ -5,27 +5,65 @@ body {
 
 .home-container {
     display: grid;
-    grid-template-columns: 3.5fr 1.5fr;
+    grid-template-columns: 4fr 1fr;
+    gap: 5px;
     margin: 20px;
+    padding: 20px;
+}
+
+.sticky-bar {
+    position: sticky;
+    top: 0;
 }
 
 .right-sideBar {
     border-radius: 7px;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
+.exercise-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.exercise-time-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -15px
+}
+
+.exercise-time-text p {
+    margin-bottom: 2px;
+}
+
+.time-value {
+    width: 120px;
+    height: 20px;
+    border: 2px solid burlywood;
+    border-radius: 3px;
+    height: 30px;
+    color: black
+}
+
 
 .profile-sec {
     padding: 20px;
     display: flex;
-    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-sec img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 90px;
     box-shadow: 0 1px 7px rebeccapurple;
-    border-radius: 50%;
+    border-radius: 10px;
     margin-right: 20px;
 }
 
@@ -40,37 +78,10 @@ body {
 }
 
 .break-section-nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-}
-
-.break-section-nav a:active {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 50%;
-    color: #fff;
-    background-color: rgb(98, 155, 46);
-}
-
-.break-section-nav a {
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: rgb(33, 185, 212);
-    color: #fff;
-}
-
-.break-section-nav a:hover {
-    text-decoration: none;
-    background-color: orange;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.nav-seconds {
-    margin-left: 1px;
-    font-size: 10px;
 }
