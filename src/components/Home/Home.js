@@ -9,13 +9,19 @@ const Home = () => {
     const [exercises, setExercises] = useState([]);
     const [list, setList] = useState([])
     const [btnValue, setBtnValue] = useState([])
-    const [changeListText, setChangeListText] = useState([])
 
 
     useEffect(() => {
         fetch('exercises.json')
             .then(res => res.json())
             .then(data => setExercises(data.exercise))
+    }, []);
+
+    useEffect(() => {
+        const list = JSON.parse(localStorage.getItem('exercise-list'));
+        if (list) {
+            setList(list)
+        }
     }, []);
 
     const total = list.reduce((a, b) => {
@@ -33,7 +39,7 @@ const Home = () => {
         <div className='home-container'>
             <div className="left-content">
                 <Header></Header>
-                <Exercises list={list} setList={setList} handleBreakDown={handleBreakDown} exercises={exercises} changeListText={changeListText} setChangeListText={setChangeListText}></Exercises>
+                <Exercises list={list} setList={setList} exercises={exercises}></Exercises>
 
             </div>
             <div className="right-sideBar">

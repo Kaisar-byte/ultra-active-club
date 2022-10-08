@@ -2,7 +2,7 @@ import React from 'react';
 import './Exercises.css'
 import Exercise from '../Exercise/Exercise';
 
-const Exercises = ({ exercises, list, setList, changeListText, setChangeListText, handleBreakDown }) => {
+const Exercises = ({ exercises, list, setList }) => {
 
     return (
         <div>
@@ -10,7 +10,7 @@ const Exercises = ({ exercises, list, setList, changeListText, setChangeListText
             <h2 className='exercise-text'>Select your exercise</h2>
             <div className='exercises-container'>
                 {
-                    exercises.map(exercise => <Exercise key={exercise.exerciseId} handleBreakDown={handleBreakDown} list={list} setList={setList} exercise={exercise} changeListText={changeListText} setChangeListText={setChangeListText}></Exercise>)
+                    exercises.map(exercise => <Exercise key={exercise.exerciseId} list={list} setList={setList} exercise={exercise}></Exercise>)
                 }
             </div>
         </div>

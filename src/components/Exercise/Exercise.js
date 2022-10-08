@@ -2,49 +2,68 @@ import React from 'react';
 import './Exercise.css'
 import Swal from 'sweetalert2'
 
-const Exercise = ({ exercise, list, setList, changeListText, setChangeListText, handleBreakDown }) => {
+const Exercise = ({ exercise, list, setList }) => {
 
     const { exerciseDescription, exerciseDuration, exerciseName, exerciseThumbnail, exerciseMinAge, exerciseId } = exercise
 
     const addToList = id => {
-        const time = {
+        const listedItem = {
             exerciseDuration,
             exerciseId
         }
 
-        console.log(time)
         if (list?.length) {
             // const newList = parseInt(setList([...list, time]));
-            const newList = [...list, time]
+            const newList = [...list, listedItem]
             setList(newList)
         }
         else {
             // const prevList = parseInt(setList(time));
-            const prevList = [time]
+            const prevList = [listedItem]
             setList(prevList)
         }
 
-        const preStorage = localStorage.getItem("listItem")
-        const oldStorage = JSON.parse(preStorage)
+        // Local Storage 
+        const preStorage = localStorage.getItem('exercise-list');
+        const oldStorage = JSON.parse(preStorage);
+
         if (oldStorage) {
-            const isExist = oldStorage.find(p => p.exerciseId === id)
-            if (isExist) {
+            const isListed = oldStorage.find(p => p.exerciseId === id)
+            if (isListed) {
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
                     text: 'Already exist!',
                     footer: '<a href="">Why do you clicked for 2nd times?</a>'
                 })
-            } else {
-                localStorage.setItem('listItem', JSON.stringify([...oldStorage, time]))
+                return;
             }
+            const NewVale = localStorage.setItem('exercise-list', JSON.stringify([...oldStorage, listedItem]));
+            setList(NewVale)
+
         }
         else {
-            localStorage.setItem("listItem", JSON.stringify([time]))
+            const PreValue = localStorage.setItem('exercise-list', JSON.stringify([listedItem]));
+            setList(PreValue)
         }
 
+        // if (oldStorage) {
+        //     const isExist = oldStorage.find(p => p.exerciseId === id)
+        //     if (isExist) {
+        //         Swal.fire({
+        //             icon: 'error',
+        //             title: 'Oops...',
+        //             text: 'Already exist!',
+        //             footer: '<a href="">Why do you clicked for 2nd times?</a>'
+        //         })
+        //     } else {
+        //         localStorage.setItem('listItem', JSON.stringify([...oldStorage, time]))
+        //     }
+        // }
+        // else {
+        //     localStorage.setItem("listItem", JSON.stringify([time]))
+        // }
     }
-
 
     return (
         <div>
