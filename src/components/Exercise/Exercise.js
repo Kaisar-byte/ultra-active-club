@@ -23,15 +23,18 @@ const Exercise = ({ exercise, list, setList, changeListText, setChangeListText, 
             setList(prevList)
         }
 
-        const preStorage = localStorage.getItem('list')
+        const preStorage = localStorage.getItem("listItem")
         const oldStorage = JSON.parse(preStorage)
         if (oldStorage) {
-            console.log('acchee')
-            // const isExist = oldStorage.find(p => p.exerciseId === id);
-            // console.log(isExist)
-        } else {
-            console.log('naiiiii');
-            localStorage.setItem('list', JSON.stringify([...oldStorage, time]))
+            const isExist = oldStorage.find(p => p.exerciseId === id)
+            if (isExist) {
+                alert('Already exists')
+            } else {
+                localStorage.setItem('listItem', JSON.stringify([...oldStorage, time]))
+            }
+        }
+        else {
+            localStorage.setItem("listItem", JSON.stringify([time]))
         }
 
     }
