@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 import Nav from '../Nav/Nav';
 import profileImage from '../../images/profile-img.png'
 import './Home.css'
-
+import Swal from 'sweetalert2'
 const Home = () => {
     const [exercises, setExercises] = useState([]);
     const [list, setList] = useState([])
@@ -24,7 +24,9 @@ const Home = () => {
 
     const handleBreakDown = (e) => {
         const prevValue = [e.target.innerText]
-        setBtnValue(prevValue)
+        setBtnValue(prevValue);
+        Swal.fire(`You selected ${prevValue} minutes`)
+
     }
 
     return (

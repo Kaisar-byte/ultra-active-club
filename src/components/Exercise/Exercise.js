@@ -1,5 +1,6 @@
 import React from 'react';
 import './Exercise.css'
+import Swal from 'sweetalert2'
 
 const Exercise = ({ exercise, list, setList, changeListText, setChangeListText, handleBreakDown }) => {
 
@@ -28,7 +29,12 @@ const Exercise = ({ exercise, list, setList, changeListText, setChangeListText, 
         if (oldStorage) {
             const isExist = oldStorage.find(p => p.exerciseId === id)
             if (isExist) {
-                alert('Already exists')
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Already exist!',
+                    footer: '<a href="">Why do you clicked for 2nd times?</a>'
+                })
             } else {
                 localStorage.setItem('listItem', JSON.stringify([...oldStorage, time]))
             }
@@ -42,7 +48,7 @@ const Exercise = ({ exercise, list, setList, changeListText, setChangeListText, 
 
     return (
         <div>
-            <div className='exercise-card'>
+            <div className='exercise-card' data-aos="flip-left">
                 <img src={exerciseThumbnail} alt="" />
                 <div className='exercise-card-info'>
                     <p><strong>{exerciseName.toUpperCase()}</strong></p>
