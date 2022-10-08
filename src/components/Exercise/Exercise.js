@@ -47,27 +47,12 @@ const Exercise = ({ exercise, list, setList }) => {
             setList(PreValue)
         }
 
-        // if (oldStorage) {
-        //     const isExist = oldStorage.find(p => p.exerciseId === id)
-        //     if (isExist) {
-        //         Swal.fire({
-        //             icon: 'error',
-        //             title: 'Oops...',
-        //             text: 'Already exist!',
-        //             footer: '<a href="">Why do you clicked for 2nd times?</a>'
-        //         })
-        //     } else {
-        //         localStorage.setItem('listItem', JSON.stringify([...oldStorage, time]))
-        //     }
-        // }
-        // else {
-        //     localStorage.setItem("listItem", JSON.stringify([time]))
-        // }
+
     }
 
     return (
         <div>
-            <div className='exercise-card' data-aos="flip-left">
+            <div className='exercise-card' data-aos="zoom-in">
                 <img src={exerciseThumbnail} alt="" />
                 <div className='exercise-card-info'>
                     <p><strong>{exerciseName.toUpperCase()}</strong></p>

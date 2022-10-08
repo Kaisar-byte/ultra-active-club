@@ -50,6 +50,20 @@ const Home = () => {
                             <h3>Mohammad Khan</h3>
                             <p>Bouar, Central Africa</p>
                         </div>
+                        <div className='profile-data'>
+                            <div className='data'>
+                                <h4>Weight</h4>
+                                <p>70<span>kg</span></p>
+                            </div>
+                            <div className='data'>
+                                <h4>Height</h4>
+                                <p>83<span>CM</span></p>
+                            </div>
+                            <div className='data'>
+                                <h4>Age</h4>
+                                <p>37<span>Yr</span></p>
+                            </div>
+                        </div>
                     </div>
                     <div className="break-section">
                         <Nav handleBreakDown={handleBreakDown}></Nav>

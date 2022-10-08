@@ -103,6 +103,20 @@ body {
 }
 
 
+.profile-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.data {
+
+    padding: 2px;
+    background-color: rgb(19, 153, 153);
+    line-height: 3px;
+    border-radius: 5px;
+    font-size: 14px;
+}
 
 @media screen and (max-width:480px) {
     .home-container {
